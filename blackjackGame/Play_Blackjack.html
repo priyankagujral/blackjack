@@ -1,0 +1,74 @@
+<html> 
+    <head> 
+        <title>blackjack</title>
+        <link rel="stylesheet" type="text/css" href="Styling_of_Game.css">
+		<script type="text/javascript" src="Javascript_Page.js"></script>
+	</head>
+	<body>
+		
+        <div class = "box">
+			<div class = "upper" id = "dealerUpper">
+				<div class = "upper1" id = "d_total">dealer Total: </div>
+				<div class = "upper2" id = "d_bet" style="font-size:25px; color:red;">Chance of Player No: </div>
+			</div>
+			<div class = "mid" id = "dealerMid"></div>
+			
+			
+			<div class = "upper" id = "player0Upper">
+				<div class = "upper1" id = "p0_name">Player1 Name: </div>
+				<div class = "upper2" id = "p0_money">Player1 Money: </div>
+				<div class = "upper3" id="p0_total">Player1 a Total: </div>
+				<div class="upper4" id="p0_bet">Player1 a Bet: </div>
+				<div class="upper5" id="p0_split">No. of splits of player1: </div>
+			</div>
+			<div class="mid" id="mid0">
+				<div class="mid1" id="p0_card0"></div>
+			</div>
+			
+			
+			<div class = "upper" id = "player1Upper">
+				<div class = "upper1" id = "p1_name">Player2 Name: </div>
+				<div class = "upper2" id = "p1_money">Player2 Money: </div>
+				<div class="upper3" id="p1_total">Player1 a Total: </div>
+				<div class="upper4" id="p1_bet">Player1 a Bet: </div>
+				<div class="upper5" id="p1_split">No. of splits of player2: </div>
+			</div>
+			<div class="mid" id="mid1">
+				<div class="mid1" id="p1_card0"></div>
+			</div>
+			
+			
+			<div class = "upper" id = "player2Upper">
+				<div class = "upper1" id = "p2_name">Player3 Name: </div>
+				<div class = "upper2" id = "p2_money">Player3 Money: </div>
+				<div class="upper3" id="p2_total">Player1 a Total: </div>
+				<div class="upper4" id="p2_bet">Player1 a Bet: </div>
+				<div class="upper5" id="p2_split">No. of splits of player2: </div>
+			</div>
+			<div class="mid" id="mid2">
+				<div class="mid1" id="p2_card0"></div>
+			</div>
+			
+			
+			<div class = "upper" id = "player3Upper">
+				<div class = "upper1" id = "p3_name">Player4 Name: </div>
+				<div class = "upper2" id = "p3_money">Player4 Money: </div>
+				<div class="upper3" id="p3_total">Player1 a Total: </div>
+				<div class="upper4" id="p3_bet">Player1 a Bet: </div>
+				<div class="upper5" id="p3_split">No. of splits of player3: </div>
+			</div>
+			<div class="mid" id="mid3">
+				<div class="mid1" id="p3_card0"></div>
+			</div>
+			
+			
+			<div class = "bottom">
+				<input type="button" id="hit" value="Hit" onclick="hit()" disabled/>
+				<input type="button" id="stand" value="Stand" onclick="stand()"  disabled/>
+				<input type="button" id="double" value="Double" onclick="doublee()" disabled/>
+				<input type="button" id="split" value="Split" onclick="split()" disabled/>
+				<input type="button" id="startgame" value="Start Game" onclick="startGame()"/>
+			</div>
+        </div>
+    </body> 
+</html>

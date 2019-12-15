@@ -1,0 +1,114 @@
+<style>
+   * {
+  box-sizing: border-box;
+}
+* {margin: 0; padding: 0;}
+			.box { 
+				background-color: #9fff80;
+                width:94%;  
+                text-align:center; 
+                padding:50px; 
+				color: black;
+            }
+			.upper{
+				font-size:20px; 
+                font-weight:bold;  
+				width:98%;
+				text-align: left;
+                height:25px;  
+			}
+			.upper1 {
+				width : 20%;
+				float : left;
+			}
+			.upper2 {
+				width : 20%; 
+				float : left;
+			}
+			.upper3 {
+				width : 20%;
+				float : left;
+			}
+			.upper4 {
+				width : 20%; 
+				float : left;
+			}
+			.upper5 {
+				width : 20%; 
+				float : left;
+			}
+            .mid { 
+                font-size:30px;  
+                color:black;  
+				width:98%; 
+                height:80px;
+				overflow:scroll;
+			}
+			.mid1 {
+				font-size:30px;  
+                color:red;  
+				width:98%; 
+                height:80px;
+				border:1px solid black;
+			}
+			.bottom {
+				font-size:20px; 
+                font-weight:bold; 
+                Text-align:center; 
+                margin-top:40px; 
+				width:90%; 
+                height:30px;  
+			}
+			.bottom input {
+				font-size: 30px;
+			}
+			.card {
+				position: relative;
+				float: left;
+				margin-right: 10px;
+				width: 40px;
+				height: 40px;
+				border-radius: 10px;
+				background: white;
+				color: black;
+				-webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+				box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+			}
+			.card p {
+				text-align: center;
+				font: 100px/220px Georgia, Times New Roman, serif;
+			}
+			.suitdiamonds:before, .suitdiamonds:after {
+  content: "♦";
+  color: #ff0000;
+}
+
+.suithearts:before, .suithearts:after {
+  content: "♥";
+  color: #ff0000;
+}
+ 
+.suitclubs:before, .suitclubs:after {
+  content: "♣";
+  color: #000;
+}
+ 
+.suitspades:before, .suitspades:after {
+  content: "♠";
+  color: #000;
+}
+
+div[class*='suit']:before {
+  position: absolute;
+  font-size: 35px;
+  left: 5px;
+  top: 5px;
+}
+ 
+div[class*='suit']:after {
+  position: absolute;
+  font-size: 35px;
+  right: 5px;
+  bottom: 5px;
+}
+		</style>

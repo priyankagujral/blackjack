@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>blackk</title>
+		<link rel="stylesheet" type="text/css" href="Styling_of_Player_Details.css">
+		<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var max_fields = 4;
+				var valuee = new Array();
+				var bet = new Array();
+				var i=1;
+				var wrapper = $(".mainn");
+				var x = 1;
+				$(".btn").click(function(e){
+					e.preventDefault();
+					if(x < max_fields){
+						x++;
+						$(wrapper).append('<label for="player1"><b>Player Name: </b></label><input type="text" placeholder="Enter Name" id="player" required><label for="bet1"><b>Enter Bet: </b></label><input type="number" placeholder="Enter Bet" min="10" max="100" id="bet" required>');
+						i++;
+						var y = "player"+i;
+						var yy = "bet"+i;
+						$("#bet").attr("id",yy);
+						$("#player").attr("id",y);
+					}
+				});
+				$(".sub").click(function(){
+					for(var j=1;j<=i;j++){
+						var x = document.getElementById("player"+j).value;
+						var xx = document.getElementById("bet"+j).value;
+						valuee.push(x);
+						bet.push(xx);
+					}
+					if (typeof(Storage) !== "undefined") {
+						localStorage.setItem("v",JSON.stringify(valuee));
+						localStorage.setItem("b",JSON.stringify(bet));
+					}
+				});
+			});
+		</script>
+		<script>
+			function NavigateToHome(){
+				location.href = "Play_Blackjack.html";
+			}
+		</script>
+    </head> 
+    <body>
+		<h2>Blackjack</h2>
+		<div class="bg-img">
+			<div class="container">
+			<h1>Enter Details</h1>
+			<div class = "mainn">
+			<label for="player1"><b>Player Name: </b></label>
+			<input type="text" placeholder="Enter Name" id="player1" required>
+
+			<label for="bet1"><b>Enter Bet: </b></label>
+			<input type="number" placeholder="Enter Bet" min="10" max="100" id="bet1" required>
+			</div>
+			<button type="submit" class="btn">Add More Players</button><br/>
+			<input type="submit" class="sub" onclick = "NavigateToHome()">
+			</div>
+		</div>
+	</body>
+</html>
